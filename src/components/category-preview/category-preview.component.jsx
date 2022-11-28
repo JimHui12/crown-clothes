@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard from '../product-card/product-card.component';
+import ProductCard from "../product-card/product-card.component";
 import "./category-preview.styles.scss";
 
 const CategoriesPreview = ({ title, products }) => {
@@ -9,9 +9,11 @@ const CategoriesPreview = ({ title, products }) => {
         <span className="title">{title.toUpperCase()}</span>
       </h2>
       <div className="preview">
-        {products.filter((_, idx) => idx < 4).map((product) => 
-        <ProductCard key={product.id} product={product}/>
-        )}
+        {products
+          .filter((_, idx) => idx < 4)
+          .map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
       </div>
     </div>
   );
