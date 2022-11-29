@@ -40,46 +40,4 @@ export const CartItems = styled.div`
   overflow-x: hidden;
 `
 
-// .cart-dropdown-container {
-
-  
-//     .empty-message {
-
-//     }
-  
-//     .cart-items {
-
-//     }
-  
-//     button {
-//       margin-top: auto;
-//       font-size: 12px;
-//     }
-
-//     .button-container {
-//         padding: 0px 4px;
-//     }
-
-//         /* Works on Firefox */
-//     * {
-//       scrollbar-width: thin;
-//       scrollbar-color: grey;
-//     }
-
-//     /* Works on Chrome, Edge, and Safari */
-//     *::-webkit-scrollbar {
-//       width: 10px;
-//     }
-
-//     *::-webkit-scrollbar-track {
-//       background: white;
-//     }
-
-//     *::-webkit-scrollbar-thumb {
-//       background-color: grey;
-//       border-radius: 20px;
-//       border: 3px solid grey;
-//     }
-//   }
-
   
