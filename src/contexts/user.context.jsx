@@ -10,12 +10,16 @@ import {
 
 //as the actual value you want to access
 export const UserContext = createContext({
-  currentUser: null,
   setCurrentUser: () => null,
+  currentUser: null,
 });
 
 export const USER_ACTION_TYPES = {
   SET_CURRENT_USER: 'SET_CURRENT_USER'
+}
+
+const INITITAL_STATE = {
+  currentUser: null
 }
 
 const userReducer = (state, action) => {
@@ -30,10 +34,6 @@ const userReducer = (state, action) => {
     default:
       throw new Error(`Unhandled type ${type} in userReducer`)
   }
-}
-
-const INITITAL_STATE = {
-  currentUser: null
 }
 
 export const UserProvider = ({ children }) => {
