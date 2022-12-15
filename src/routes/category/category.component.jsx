@@ -8,9 +8,9 @@ import "./category.styles.scss";
 
 const Category = () => {
   const { category } = useParams();
-  const categoriesMap = useSelector(selectCategoriesMap)
-  const isLoading = useSelector(selectCategoriesIsLoading)
-  const [products, setProducts] = useState(categoriesMap[category])
+  const categoriesMap = useSelector(selectCategoriesMap);
+  const isLoading = useSelector(selectCategoriesIsLoading);
+  const [products, setProducts] = useState(categoriesMap[category]);
 
   useEffect(() => {
     setProducts(categoriesMap[category]);
@@ -20,13 +20,13 @@ const Category = () => {
     <Fragment>
       <h2 className="category-title">{category.toUpperCase()}</h2>
       {
-        isLoading ? <Spinner /> :
+        isLoading ? (<Spinner />) :
       
       (<div className="category-container">
-        {products &&
-          products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+          {products &&
+            products.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
       </div>)}
     </Fragment>
   );
