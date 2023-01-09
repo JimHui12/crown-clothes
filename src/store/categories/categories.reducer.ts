@@ -1,4 +1,4 @@
-import {CATEGORIES_ACTION_TYPES} from './categories.types';
+import {CATEGORIES_ACTION_TYPES, Category} from './categories.types';
 
 import { CategoryAction } from './categories.action';
 // import Category from '../../routes/category/category.component';
